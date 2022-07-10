@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/Luxum/static/css/main.1b89898a.css",
+    "main.js": "/Luxum/static/js/main.a49cb07d.js",
+    "static/js/787.7c85ef3f.chunk.js": "/Luxum/static/js/787.7c85ef3f.chunk.js",
+    "static/media/house4.jpg": "/Luxum/static/media/house4.09a7e74fce11d6b5be76.jpg",
+    "static/media/house1.jpg": "/Luxum/static/media/house1.72f366d81d39b53eec52.jpg",
+    "static/media/house3.jpg": "/Luxum/static/media/house3.5b312bf1853a997d9477.jpg",
+    "static/media/house2.jpg": "/Luxum/static/media/house2.b653d3234bbb06c26a1f.jpg",
+    "static/media/house5.jpg": "/Luxum/static/media/house5.600e16491edc0f56d69e.jpg",
+    "index.html": "/Luxum/index.html",
+    "main.1b89898a.css.map": "/Luxum/static/css/main.1b89898a.css.map",
+    "main.a49cb07d.js.map": "/Luxum/static/js/main.a49cb07d.js.map",
+    "787.7c85ef3f.chunk.js.map": "/Luxum/static/js/787.7c85ef3f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1b89898a.css",
+    "static/js/main.a49cb07d.js"
+  ]
+}
