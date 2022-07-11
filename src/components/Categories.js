@@ -1,18 +1,10 @@
 import React from 'react'
 import { useState } from 'react';
 import { MdApartment, MdOtherHouses, MdLandscape } from 'react-icons/md';
+import { Link } from 'react-router-dom';
 
-const Categories = () => {
+const Categories = ({sendType}) => {
     const [type, setType] = useState('')
-
-    const saleType = () =>{
-        setType('Sale');
-        console.log(type)
-    }
-    const rentType = ()=>{
-        setType('Rent');
-        console.log(type)
-    }
 
   return (
     <div className='categorySet'>
@@ -22,21 +14,31 @@ const Categories = () => {
             Filter quckly the properties 
           </h2>
           <div style={{alignItems:'center'}}>
-              <button onClick={saleType} >For sale</button>
-              <button onClick={rentType}>For rent</button>
+              <button onClick={()=>{setType('Sale')}} >For sale</button>
+              <button onClick={()=>{setType('Rent')}}>For rent</button>
           </div>
         </div>
             <h2 className='propertyType'> {type?`Select the category for #${type}`:''}</h2>
         <div className='catIcons'>
-            <div className='iconsCards'>
-                <MdApartment color={'#1E4868'} size={40}/>
-            </div>
-            <div className='iconsCards'>
-                <MdOtherHouses color={'#1E4868'} size={40}/>
-            </div>
-            <div className='iconsCards'>
-                <MdLandscape color={'#1E4868'} size={40}/>
-            </div>
+            <Link to="/apartments" onClick={() => sendType(type)}>
+                <div className='iconsCards'>
+                    <MdApartment color={'#1E4868'} size={40}/> 
+                    <span className='iconText'>Apartments</span> 
+                </div>
+            </Link>
+            <Link to="/houses">
+                <div className='iconsCards'>
+                    <MdOtherHouses color={'#1E4868'} size={40}/> 
+                    <span className='iconText'>Houses</span> 
+                </div>
+            </Link>
+            <Link to="/lands">
+                <div className='iconsCards'>
+                    <MdLandscape color={'#1E4868'} size={40}/> 
+                    <span className='iconText'>Lands</span> 
+                </div>
+            </Link>
+            
         </div>
         
     </div>

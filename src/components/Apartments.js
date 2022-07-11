@@ -5,7 +5,7 @@ import house3 from "../assets/house3.jpg";
 import house4 from "../assets/house4.jpg";
 import house5 from "../assets/house5.jpg";
 
-const Apartments = () => {
+const Apartments = ({businessType}) => {
   const [apartments, setApartments] = useState([
     { id : 1,
       title: 'Apartment at Colombo 3',
@@ -59,12 +59,11 @@ const Apartments = () => {
       }
   ])
 
-
+    console.log(businessType)
   return (
     <div className="cardSet">
       {
         apartments.map(apartment => {
-          console.log(apartment.image)
           return (
             <div key={apartment.id} className="card" >
               <img src={house3} className= "apartmentImage" alt="House" />

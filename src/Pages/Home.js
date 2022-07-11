@@ -4,7 +4,7 @@ import styled from "styled-components"
 import house from "../assets/house1.jpg"
 import Categories from "../components/Categories"
 
-const Home = () => {
+const Home = ({type}) => {
   return (
     <div>
         <div className="overTheFold">
@@ -18,7 +18,7 @@ const Home = () => {
             <img src={house} alt="House" style={{width:'100%', height:'100%', maxWidth:'auto',maxHeight:'auto'}} />
           </div>
         </div>
-        <Categories />
+        <Categories sendType={type}/>
         {/* <Apartments /> */}
         {/* <Houses /> */}
     </div>

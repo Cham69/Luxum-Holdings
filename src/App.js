@@ -11,11 +11,11 @@ function App() {
     <div className="App">
       {/* <Navbar /> */}
       <Pages />
-      <Routes>
+      {/* <Routes>
         <Route path="/apartments" element={<Apartments />} />
         <Route path="/houses" element={<Houses />} />
         <Route path="/lands" element={<Lands />} />
-      </Routes>
+      </Routes> */}
     </div>
   );
 }
